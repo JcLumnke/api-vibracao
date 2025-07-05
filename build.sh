@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Instala a versão correta do Python
-pyenv install 3.11.4
-pyenv global 3.11.4
-pip install --upgrade pip
+
+# Atualiza pip, setuptools e wheel
+pip install --upgrade pip setuptools wheel
+
+# Instala as dependências do projeto
 pip install -r requirements.txt
